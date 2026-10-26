@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17201c">
+
+  <title>Casa Panoramic Vintileasca | Website în lucru</title>
+  <meta name="description" content="Casa Panoramic Vintileasca – Website în lucru. Pentru informații și rezervări sunați la 0775 302 543.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background: #17201c;
+    }
+
+    .landing {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .landing::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background-image: url("landingpage-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .landing::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(
+        180deg,
+        rgba(0,0,0,.40) 0%,
+        rgba(0,0,0,.58) 50%,
+        rgba(0,0,0,.55) 100%
+      );
+    }
+
+    .content {
+      width: 100%;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1s ease both;
+    }
+
+    .logo {
+      display: block;
+      width: min(300px, 75vw);
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 38px;
+    }
+
+    .divider {
+      width: 65px;
+      height: 2px;
+      background: #dedbc7;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 58px);
+      font-weight: 500;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .description {
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(255,255,255,.85);
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    .phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 30px;
+      background: #fff;
+      color: #1b2720;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all .25s ease;
+    }
+
+    .phone:hover {
+      background: #e7e5d8;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,.2);
+    }
+
+    .phone svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 24px;
+      left: 15px;
+      right: 15px;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,.65);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .landing {
+        padding: 55px 22px 75px;
+      }
+
+      .landing::before {
+        background-position: center center;
+      }
+
+      .logo {
+        width: min(245px, 70vw);
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        letter-spacing: -.5px;
+      }
+
+      .description {
+        margin-bottom: 28px;
+      }
+
+      .phone {
+        padding: 15px 26px;
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .content {
+        animation: none;
+      }
+
+      .phone {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="landing">
+    <div class="content">
+
+      <img
+        src="casa-logo.png"
+        alt="Casa Panoramic Vintileasca"
+        class="logo"
+      >
+
+      <div class="divider"></div>
+
+      <h1>Website în lucru!</h1>
+
+      <p class="description">
+        Pregătim ceva special pentru tine.<br>
+        Pentru informații și rezervări, contactează-ne.
+      </p>
+
+      <a class="phone" href="tel:+40775302543">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 18a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 3.18 2 2 0 0 1 4.08 1h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.04 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.68A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        0775 302 543
+      </a>
+
+    </div>
+
+    <footer class="footer">
+      © 2026 CASA PANORAMIC VINTILEASCA
+    </footer>
+  </main>
+
+</body>
+</html>
