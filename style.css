@@ -1,0 +1,1280 @@
+:root{--chocolate:#44291e;--chocolate-dark:#24150f;--chocolate-light:#76513d;--cream:#faf7f2;--white:#fff;--sand:#e8ded0;--muted:#756c64;--accent:#a77b55;--overlay:rgba(24,16,12,.53);--radius:18px;--max:1240px;--shadow:0 18px 50px rgba(43,25,14,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--chocolate-dark);font-family:'Montserrat',Arial,sans-serif;line-height:1.7}h1,h2,h3,.brand{font-family:'Cormorant Garamond',Georgia,serif;line-height:1.08}h1{font-size:clamp(2.5rem,4vw,7rem);margin:18px 0}h2{font-size:clamp(2.6rem,4.5vw,4.7rem);margin:12px 0 22px}h3{font-size:2rem;margin:10px 0}p{margin:0 0 20px}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,input,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 48px));margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.23em;font-size:.72rem;font-weight:700;color:var(--accent)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--chocolate);color:var(--white);padding:14px 24px;border:1px solid var(--chocolate);border-radius:3px;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;font-weight:700;cursor:pointer;transition:.25s}.btn:hover{background:var(--chocolate-light);transform:translateY(-2px)}.btn.light{background:var(--white);color:var(--chocolate);border-color:var(--white)}.btn.outline{background:transparent;color:inherit;border-color:currentColor}.site-header{position:fixed;top:0;left:0;width:100%;z-index:100;background:rgba(35,22,16,.18);color:white;transition:.3s}.site-header.scrolled,.site-header.open{background:var(--chocolate-dark);box-shadow:0 8px 30px #0002}.nav{height:90px;display:flex;align-items:center;gap:28px}.brand{font-size:2rem;font-weight:700;white-space:nowrap}.brand small{display:block;font:500 .55rem Montserrat,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:23px;margin-left:auto}.nav-links>a,.dropdown-toggle{font-size:.73rem;font-weight:700;letter-spacing:.035em;color:inherit}.dropdown{position:relative}.dropdown-toggle{border:0;background:transparent;cursor:pointer;padding:16px 0}.dropdown-menu{position:absolute;top:100%;left:0;min-width:210px;background:var(--white);color:var(--chocolate);box-shadow:var(--shadow);padding:10px;display:none}.dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu,.dropdown.active .dropdown-menu{display:grid}.dropdown-menu a{padding:9px 12px;font-size:.8rem}.dropdown-menu a:hover{background:var(--cream)}.nav-actions{display:flex;align-items:center;gap:10px}.lang{background:transparent;color:white;border:1px solid #ffffff70;padding:9px;cursor:pointer}.menu-toggle{display:none;background:none;color:white;border:0;font-size:1.6rem}.hero,.video-band{position:relative;overflow:hidden;color:white;background:var(--chocolate-dark)}.hero{min-height:100svh;display:flex;align-items:center;text-align:center}.hero.inner{min-height:68vh}.hero:after,.video-band:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,10,6,.6),rgba(18,10,6,.28)),var(--overlay)}.hero video,.video-band video,.hero .fallback,.video-band .fallback{position:absolute;width:100%;height:100%;inset:0;object-fit:cover}.hero .content,.video-band .content{position:relative;z-index:2;width:min(960px,calc(100% - 40px));margin:auto;padding:150px 0 90px}.hero .eyebrow,.video-band .eyebrow{color:#e7c8a5}.hero p{font-size:1.05rem;max-width:680px;margin:0 auto 30px}.hero-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.section{padding:50px 0}.section.alt{background:white}.section-head{text-align:center;max-width:800px;margin:0 auto 45px}.section-head p{color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.split .image-wrap{position:relative}.split img{width:100%;height:520px;object-fit:cover}.split .image-wrap:after{content:'';position:absolute;border:1px solid var(--accent);inset:22px -22px -22px 22px;pointer-events:none}.split.reverse .image-wrap{order:2}.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:38px}.stat strong{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:2.7rem;color:var(--chocolate)}.stat span{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{background:white;box-shadow:var(--shadow);overflow:hidden;transition:transform .3s}.card:hover{transform:translateY(-7px)}.card img{height:270px;width:100%;object-fit:cover;transition:transform .6s}.card:hover img{transform:scale(1.045)}.card .card-body{padding:24px}.card p{font-size:.85rem;color:var(--muted)}.card .text-link{font-weight:700;font-size:.78rem;color:var(--chocolate-light);text-transform:uppercase;letter-spacing:.08em}.video-band{min-height:530px;display:flex;align-items:center;text-align:center}.video-band .content{padding:120px 0}.video-band p{max-width:680px;margin:0 auto 24px}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{padding:35px 20px;background:white;border:1px solid var(--sand);text-align:center}.feature .symbol{font-size:2rem;color:var(--accent)}.feature h3{font-size:1.6rem}.photo-triptych{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo-triptych img{height:350px;width:100%;object-fit:cover;border-radius:14px;}.duo-images{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:25px;align-items:center}.duo-images img{height:390px;width:100%;object-fit:cover}.duo-images .middle{text-align:center}.marquee{overflow:hidden;mask-image:linear-gradient(to right,transparent,black 7%,black 93%,transparent)}.marquee-track{display:flex;width:max-content;gap:14px;animation:move 55s linear infinite}.marquee:hover .marquee-track{animation-play-state:paused}.marquee img{width:360px;height:270px;object-fit:cover;flex:none}@keyframes move{to{transform:translateX(-50%)}}.attraction-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.attraction-grid article{position:relative;min-height:350px;overflow:hidden}.attraction-grid img{width:100%;height:350px;object-fit:cover}.attraction-grid h3{position:absolute;bottom:0;left:0;right:0;color:white;margin:0;padding:60px 20px 20px;background:linear-gradient(transparent,#000b);font-size:1.8rem}.slider{position:relative;overflow:hidden}.slider-viewport{overflow:hidden}.slider-track{display:flex;transition:transform .6s ease}.slider-track img{width:100%;aspect-ratio:16/9;object-fit:cover;flex:0 0 100%}.slider-controls{position:absolute;bottom:18px;right:18px;display:flex;gap:8px}.slider-controls button{background:#fffdf0;border:0;padding:9px 15px;cursor:pointer}.unit-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}.checklist{padding-left:20px}.checklist li{margin:12px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-grid input,.contact-grid textarea{display:block;width:100%;border:1px solid var(--sand);padding:15px;margin:0 0 14px;background:white}.contact-grid textarea{min-height:160px}.footer{background:var(--chocolate-dark);color:white;padding:70px 0 24px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:45px}.footer a{display:block;font-size:.85rem;margin-bottom:10px;color:#e9ded7}.footer p{color:#c8bcb4}.footer-bottom{border-top:1px solid #ffffff25;padding-top:20px;margin-top:55px;font-size:.75rem;color:#c8bcb4}.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}.center{text-align:center}.mt{margin-top:36px}.floating-contact{position:fixed;bottom:25px;right:25px;z-index:90;border-radius:50%;height:56px;width:56px;background:var(--chocolate);color:white;display:grid;place-items:center;box-shadow:var(--shadow);font-size:1.3rem}.notice{font-size:.78rem;color:var(--muted)}
+@media(max-width:1100px){.nav-links{gap:12px}.nav-links>a,.dropdown-toggle{font-size:.65rem}.cards{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.nav{height:75px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:75px;left:0;right:0;background:var(--chocolate-dark);padding:22px 24px;max-height:calc(100vh - 75px);overflow:auto;flex-direction:column;align-items:stretch;gap:12px}.site-header.open .nav-links{display:flex}.dropdown-menu{position:static;box-shadow:none;background:#ffffff10;color:white;margin-top:5px}.nav-actions{margin-left:auto}.nav-actions .btn{display:none}.split,.unit-layout,.contact-grid{grid-template-columns:1fr;gap:35px}.split.reverse .image-wrap{order:0}.split img{height:380px}.stat-row{grid-template-columns:repeat(2,1fr)}.duo-images{grid-template-columns:1fr 1fr}.duo-images .middle{grid-column:1/-1;grid-row:1}.duo-images img{height:250px}.attraction-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:540px){.container{width:calc(100% - 32px)}.section{padding:75px 0}.hero .content{padding:140px 0 70px}.cards,.feature-grid,.attraction-grid,.photo-triptych{grid-template-columns:1fr}.card img{height:280px}.photo-triptych img{height:240px}.stat-row{gap:10px}.stat strong{font-size:2.1rem}.duo-images{gap:8px}.duo-images img{height:200px}.marquee img{width:260px;height:200px}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.hero.inner{min-height:60vh}.slider-track img{aspect-ratio:4/3}.brand{font-size:1.55rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* CASA PANORAMIC — GALERII RESPONSIVE SI LIGHTBOX */
+html,body{max-width:100%;overflow-x:clip}
+.unit-layout,.unit-layout>div,.slider,.slider-viewport{min-width:0;max-width:100%}
+.slider{width:100%;overflow:hidden;border-radius:var(--radius);background:#eee8df}
+.slider-viewport{width:100%;overflow:hidden}
+.slider-track{display:flex;width:100%;transition:transform .6s ease;will-change:transform}
+.slider-track .cp-slide{display:flex;align-items:center;justify-content:center;flex:0 0 100%;min-width:0;width:100%;height:clamp(260px,35vw,490px);padding:0;border:0;background:#eee8df;cursor:zoom-in}
+.slider-track .cp-slide img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;aspect-ratio:auto}
+.slider-controls{z-index:2}
+.cp-gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;width:100%;min-width:0}
+.cp-gallery-item{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;width:100%;height:215px;padding:0;border:1px solid var(--sand);border-radius:10px;overflow:hidden;background:#eee8df;cursor:zoom-in}
+.cp-gallery-item img{width:100%;height:100%;max-width:100%;object-fit:contain;transition:transform .3s ease}
+.cp-gallery-item:hover img{transform:scale(1.035)}
+.cp-gallery-zoom{position:absolute;right:9px;bottom:9px;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--chocolate);color:white;font-size:17px}
+.cp-lightbox[hidden]{display:none!important}
+.cp-lightbox{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(13,10,8,.96);color:white;touch-action:pan-y}
+body.cp-lightbox-open{overflow:hidden}
+.cp-lb-content{display:flex;flex-direction:column;align-items:center;justify-content:center;max-width:calc(100vw - 120px);width:100%;height:100%;padding:45px 0;min-width:0}
+.cp-lb-content img{display:block;max-width:100%;max-height:calc(100dvh - 115px);width:auto;height:auto;object-fit:contain}
+.cp-lb-count{padding-top:12px;font-size:13px;letter-spacing:.12em}
+.cp-lightbox button{position:absolute;z-index:2;border:1px solid #ffffff55;background:#24150fc9;color:white;cursor:pointer;border-radius:50%;width:46px;height:46px;font-size:30px;line-height:1}
+.cp-lb-close{top:16px;right:16px}.cp-lb-prev{left:14px;top:50%;transform:translateY(-50%)}.cp-lb-next{right:14px;top:50%;transform:translateY(-50%)}
+@media(max-width:850px){.cp-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cp-gallery-item{height:180px}.unit-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:540px){.cp-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.cp-gallery-item{height:155px}.slider-track .cp-slide{height:310px}.cp-lb-content{max-width:calc(100vw - 24px);padding:70px 0}.cp-lb-content img{max-height:calc(100dvh - 155px)}.cp-lb-prev,.cp-lb-next{top:auto;bottom:15px;transform:none}.cp-lb-prev{left:16px}.cp-lb-next{right:16px}}
+
+/* ==========================================
+   CASA PANORAMIC - VIDEOCLIPURI UNITĂȚI
+========================================== */
+
+.cp-unit-videos {
+  width: 100%;
+  overflow: hidden;
+}
+
+.unit-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.unit-video-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--sand);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+.unit-video-media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #1c130e;
+}
+
+.unit-video-media video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #1c130e;
+}
+
+.unit-video-info {
+  padding: 22px 25px 26px;
+}
+
+.unit-video-info .eyebrow {
+  color: var(--accent);
+}
+
+.unit-video-info h3 {
+  margin: 8px 0 0;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--chocolate);
+}
+
+@media (max-width: 767px) {
+  .unit-video-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .unit-video-info {
+    padding: 18px 20px;
+  }
+}
+
+
+/* ==========================================
+   CASA PANORAMIC - REELS COMPACT
+========================================== */
+
+/* Aceeași secțiune cu prezentarea casei */
+
+.cp-unit-main-section {
+  padding-bottom: 48px;
+}
+
+.cp-unit-main-section .unit-layout {
+  margin-bottom: 0;
+}
+
+.cp-unit-reels-block {
+  width: 100%;
+  margin: 42px auto 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cp-unit-reels-heading {
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+.cp-unit-reels-heading .eyebrow {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.cp-unit-reels-heading h2 {
+  margin: 0 0 10px;
+  color: var(--chocolate);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.cp-unit-reels-heading p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Slider video - compact pe desktop */
+
+.cp-reels {
+  position: relative;
+  width: min(100%, 310px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #17100d;
+  box-shadow: 0 15px 45px rgba(35,20,12,.17);
+  isolation: isolate;
+  outline-offset: 5px;
+}
+
+.cp-reels-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.cp-reels-track {
+  display: flex;
+  width: 100%;
+  transition: transform .4s cubic-bezier(.22,1,.36,1);
+  will-change: transform;
+}
+
+.cp-reel {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  background: #17100d;
+  cursor: pointer;
+}
+
+.cp-reel video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #17100d;
+  pointer-events: none;
+}
+
+/* Gradient discret peste video */
+
+.cp-reel-shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.78) 0%,
+    rgba(0,0,0,.22) 24%,
+    transparent 48%
+  );
+}
+
+/* Titlul peste video */
+
+.cp-reel-overlay {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 45px 18px 35px;
+  text-align: left;
+  color: #fff;
+  pointer-events: none;
+}
+
+.cp-reel-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #e7c8a5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.cp-reel-overlay h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.15;
+}
+
+/* Buton Play / Pause */
+
+.cp-reel-toggle {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  background: rgba(20,12,8,.48);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity .2s, background .2s;
+}
+
+.cp-reel:hover .cp-reel-toggle,
+.cp-reel-toggle:focus-visible,
+.cp-reel.cp-reel-paused .cp-reel-toggle {
+  opacity: 1;
+}
+
+.cp-reel-toggle:hover {
+  background: rgba(20,12,8,.75);
+}
+
+.cp-reel-toggle-icon {
+  display: block;
+  line-height: 1;
+}
+
+/* Săgeți */
+
+.cp-reels-prev,
+.cp-reels-next {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  background: rgba(20,12,8,.5);
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(7px);
+  transition: background .2s;
+}
+
+.cp-reels-prev:hover,
+.cp-reels-next:hover {
+  background: rgba(68,41,30,.9);
+}
+
+.cp-reels-prev {
+  left: 9px;
+}
+
+.cp-reels-next {
+  right: 9px;
+}
+
+.cp-reels-prev[hidden],
+.cp-reels-next[hidden] {
+  display: none !important;
+}
+
+/* Contor clipuri */
+
+.cp-reels-counter {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .06em;
+  backdrop-filter: blur(6px);
+}
+
+.cp-reels-separator {
+  opacity: .55;
+}
+
+/* Progres video */
+
+.cp-reels-progress {
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255,255,255,.25);
+  pointer-events: none;
+}
+
+.cp-reels-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #e7c8a5;
+}
+
+/* Mesaj eroare video */
+
+.cp-reel-error {
+  position: absolute;
+  z-index: 8;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 25px;
+  background: rgba(23,16,13,.94);
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.cp-reel-error[hidden] {
+  display: none !important;
+}
+
+.cp-reel-error button {
+  padding: 10px 18px;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cp-reel-error button:hover {
+  background: rgba(255,255,255,.12);
+}
+
+/* Instrucțiune sub slider */
+
+.cp-reels-hint {
+  margin: 13px auto 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Desktop mare */
+
+@media (min-width: 1200px) {
+  .cp-reels {
+    width: 290px;
+  }
+
+  .cp-unit-reels-block {
+    margin-top: 36px;
+  }
+}
+
+/* Tabletă */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cp-reels {
+    width: 300px;
+  }
+
+  .cp-unit-reels-block {
+    margin-top: 34px;
+  }
+}
+
+/* Telefon */
+
+@media (max-width: 767px) {
+  .cp-unit-main-section {
+    padding-bottom: 35px;
+  }
+
+  .cp-unit-reels-block {
+    margin-top: 30px;
+  }
+
+  .cp-unit-reels-heading {
+    margin-bottom: 20px;
+  }
+
+  .cp-reels {
+    width: min(100%, 330px);
+    border-radius: 12px;
+  }
+
+  .cp-reel-overlay {
+    padding: 40px 18px 35px;
+  }
+
+  .cp-reel-overlay h3 {
+    font-size: 1.55rem;
+  }
+
+  .cp-reel-toggle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .cp-reels-prev,
+  .cp-reels-next {
+    width: 32px;
+    height: 32px;
+    font-size: 23px;
+  }
+
+  .cp-reels-hint {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cp-reels {
+    width: min(100%, 290px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cp-reels-track {
+    transition: none;
+  }
+}
+
+
+
+
+
+
+
+/* sa fie despartite hero homepage titlul*/
+.hero .content h1 {
+    white-space: pre-line;
+}
+
+
+
+/* =========================================
+   CASA PANORAMIC - FACILITATI PREMIUM
+   ========================================= */
+
+.cp-facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.cp-facility-card {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+    isolation: isolate;
+    background: #222;
+    cursor: default;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform .35s ease,
+                box-shadow .35s ease;
+}
+
+/* IMAGINE PE TOT CARDUL */
+.cp-facility-card img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .65s ease;
+}
+
+/* GRADIENT PENTRU TEXT */
+.cp-facility-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.82) 0%,
+        rgba(0,0,0,.38) 32%,
+        rgba(0,0,0,.06) 70%,
+        transparent 100%
+    );
+    pointer-events: none;
+}
+
+/* TEXT PESTE IMAGINE */
+.cp-facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 26px 22px;
+    color: #fff;
+}
+
+.cp-facility-overlay h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fff !important;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+
+/* LINIE DECORATIVA */
+.cp-facility-line {
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin-top: 12px;
+    background: #e8cba1;
+    transition: width .35s ease;
+}
+
+/* HOVER */
+.cp-facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(0,0,0,.16);
+}
+
+.cp-facility-card:hover img {
+    transform: scale(1.08);
+}
+
+.cp-facility-card:hover .cp-facility-line {
+    width: 65px;
+}
+
+/* TABLETA */
+@media (max-width: 1024px) {
+    .cp-facilities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .cp-facility-card {
+        height: 270px;
+    }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+    .cp-facilities-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .cp-facility-card {
+        height: 300px;
+        border-radius: 12px;
+    }
+
+    .cp-facility-overlay {
+        padding: 15px 12px;
+    }
+
+    .cp-facility-overlay h3 {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .cp-facility-line {
+        width: 25px;
+        margin-top: 8px;
+    }
+
+    .cp-facility-card:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cp-facility-card,
+    .cp-facility-card img,
+    .cp-facility-line {
+        transition: none;
+    }
+}
+
+
+.gastronomie-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 35px auto;
+}
+
+.gastronomie-gallery-item {
+    overflow: hidden;
+    border-radius: 14px;
+    aspect-ratio: 4 / 3;
+}
+
+.gastronomie-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.gastronomie-gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+@media (max-width: 768px) {
+    .gastronomie-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+/* EVENIMENTE - GALERIE SI ATRACTIE */
+
+.cp-events-extra {
+    width: 100%;
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.cp-events-attraction {
+    text-align: center;
+    padding: 65px 20px 35px;
+}
+
+.cp-events-attraction h2 {
+    font-size: clamp(26px, 3vw, 40px);
+    margin: 15px 0;
+}
+
+.cp-events-attraction p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    opacity: .8;
+}
+
+.cp-events-attraction-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 16px 28px;
+    border-radius: 50px;
+    background: #284b38;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.cp-events-attraction-btn:hover {
+    background: #1c3628;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+@media (max-width: 600px) {
+    .cp-events-extra {
+        padding: 0 12px;
+        margin: 30px auto;
+    }
+
+    .cp-events-attraction {
+        padding: 45px 10px 20px;
+    }
+
+    .cp-events-attraction-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+/* EVENIMENTE - CONTROL IMAGINI GALERIE */
+
+.cp-events-extra .gastronomie-gallery-item {
+    aspect-ratio: 3 / 2 !important;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #eee;
+}
+
+.cp-events-extra .gastronomie-gallery-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* IMAGINEA 1 - FARA DECUPARE */
+.cp-events-extra .gastronomie-gallery-item:nth-child(5) img {
+    object-fit: contain !important;
+    transform: none !important;
+}
+
+/* PASTREAZA IMAGINEA 1 NEMODIFICATA LA HOVER */
+.cp-events-extra .gastronomie-gallery-item:nth-child(5):hover img {
+    transform: none !important;
+}
+
+
+/* ====================================
+   CASA PANORAMIC - ATRACTII
+==================================== */
+
+.cp-attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin: 35px auto;
+}
+
+.cp-attraction-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    scroll-margin-top: 110px;
+    transition: transform .35s ease,
+                box-shadow .35s ease;
+}
+
+.cp-attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(0,0,0,.12);
+}
+
+.cp-attraction-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.cp-attraction-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.cp-attraction-card:hover img {
+    transform: scale(1.05);
+}
+
+.cp-attraction-content {
+    padding: 25px;
+}
+
+.cp-attraction-distance {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #476b4d;
+    margin-bottom: 12px;
+}
+
+.cp-attraction-content h3 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    color: #242424;
+}
+
+.cp-attraction-content p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .cp-attractions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .cp-attractions-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cp-attraction-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .cp-attraction-content {
+        padding: 20px;
+    }
+
+    .cp-attraction-content h3 {
+        font-size: 20px;
+    }
+}
+/* LOGO CASA PANORAMIC */
+
+.site-header .brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-header .brand-logo {
+    display: block;
+    width: auto;
+    height: 65px;
+    max-width: 220px;
+    object-fit: contain;
+}
+
+/* TELEFON */
+@media (max-width: 768px) {
+    .site-header .brand-logo {
+        height: 48px;
+        max-width: 160px;
+    }
+}
+
+
+/* CASA PANORAMIC - LOGO FOOTER */
+
+.footer-brand-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+
+.footer-brand-logo img {
+    display: block;
+    width: auto;
+    height: 105px;
+    max-width: 280px;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+
+.footer-brand-logo:hover img {
+    transform: scale(1.04);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .footer-brand-logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-brand-logo img {
+        height: 85px;
+        max-width: 220px;
+    }
+}
+
+
+/* =========================================
+   CASA PANORAMIC - LOGO IN HERO
+========================================= */
+
+/* LOGO GENERAL */
+.hero .cp-hero-logo {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto 22px;
+    filter: drop-shadow(0 5px 18px rgba(0,0,0,.25));
+}
+
+/* HOMEPAGE - LOGO MARE */
+.hero .cp-hero-logo-home {
+    height: 220px;
+    max-width: 420px;
+}
+
+/* PAGINI INTERIOARE - LOGO MIC */
+.hero .cp-hero-logo-inner {
+    height: 120px;
+    max-width: 260px;
+}
+
+/* SPATIERE TITLU */
+.hero .content h1 {
+    margin-top: 12px;
+}
+
+/* TABLETA */
+@media (max-width: 1024px) {
+    .hero .cp-hero-logo-home {
+        height: 170px;
+        max-width: 330px;
+    }
+
+    .hero .cp-hero-logo-inner {
+        height: 100px;
+        max-width: 220px;
+    }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+    .hero .cp-hero-logo {
+        margin-bottom: 16px;
+    }
+
+    .hero .cp-hero-logo-home {
+        height: 145px;
+        max-width: 280px;
+    }
+
+    .hero .cp-hero-logo-inner {
+        height: 85px;
+        max-width: 190px;
+    }
+
+    .hero .content h1 {
+        margin-top: 8px;
+    }
+}
+
+
+
+
+/* ==========================================
+   CASA PANORAMIC - LIGHTBOX
+   ========================================== */
+
+.cp-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 9, 7, .96);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .25s ease,
+                visibility .25s ease;
+}
+
+.cp-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+body.cp-lightbox-open {
+    overflow: hidden !important;
+}
+
+/* IMAGINE */
+.cp-lb-image-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 150px);
+    height: 90vh;
+}
+
+.cp-lb-image {
+    display: block;
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 15px 60px rgba(0,0,0,.35);
+}
+
+/* CONTOR */
+.cp-lb-counter {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* BUTOANE */
+.cp-lb-close,
+.cp-lb-prev,
+.cp-lb-next {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    cursor: pointer;
+    transition: background .25s ease,
+                transform .25s ease;
+}
+
+.cp-lb-close:hover,
+.cp-lb-prev:hover,
+.cp-lb-next:hover {
+    background: rgba(255,255,255,.25);
+}
+
+.cp-lb-close {
+    top: 25px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.cp-lb-prev,
+.cp-lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 65px;
+    border-radius: 12px;
+    font-size: 27px;
+}
+
+.cp-lb-prev {
+    left: 25px;
+}
+
+.cp-lb-next {
+    right: 25px;
+}
+
+/* INDICATOR CLICK */
+.gastronomie-gallery img,
+.cp-traseu-gallery img,
+.cp-attractions-grid img,
+.cp-facilities-grid img,
+.gallery img,
+.unit-gallery img,
+.overall-gallery img {
+    cursor: zoom-in;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cp-lb-image-wrap {
+        width: 100%;
+        height: 85vh;
+        padding: 0 12px;
+    }
+
+    .cp-lb-image {
+        max-height: 75vh;
+        border-radius: 5px;
+    }
+
+    .cp-lb-close {
+        top: 15px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .cp-lb-prev,
+    .cp-lb-next {
+        width: 38px;
+        height: 48px;
+        font-size: 20px;
+        background: rgba(0,0,0,.45);
+        border-radius: 8px;
+    }
+
+    .cp-lb-prev {
+        left: 8px;
+    }
+
+    .cp-lb-next {
+        right: 8px;
+    }
+
+    .cp-lb-counter {
+        bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================
+   CASA PANORAMIC
+   WHATSAPP + BACK TO TOP
+========================================== */
+
+#cp-floating-actions {
+    position: fixed;
+    right: 22px;
+    bottom: 24px;
+    z-index: 99990;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#cp-floating-actions a,
+#cp-floating-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        opacity .3s ease;
+}
+
+/* WHATSAPP */
+.cp-float-whatsapp {
+    background: #25d366 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 5px 22px rgba(37,211,102,.35);
+}
+
+.cp-float-whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 9px 28px rgba(37,211,102,.5);
+}
+
+/* BACK TO TOP */
+.cp-float-top {
+    background: #3c2525 !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,.2) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(12px);
+}
+
+.cp-float-top.cp-top-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.cp-float-top:hover {
+    background: #5c3838 !important;
+    transform: translateY(-4px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    #cp-floating-actions {
+        right: 14px;
+        bottom: 18px;
+        gap: 10px;
+    }
+
+    #cp-floating-actions a,
+    #cp-floating-actions button {
+        width: 49px;
+        height: 49px;
+    }
+
+    #cp-floating-actions svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* INVERSARE POZITII BUTOANE */
+
+#cp-floating-actions .cp-float-top {
+    order: 1;
+}
+
+#cp-floating-actions .cp-float-whatsapp {
+    order: 2;
+}
+.floating-contact {
+    display: none !important;
+}
+
+
+
+
+
+
+/*Dezactivare Vila 2*/
+/* DEZACTIVEAZA CLICK-UL PE VILA 2 */
+
+a[href="vila-2.html"] {
+    pointer-events: none !important;
+    cursor: default !important;
+}
