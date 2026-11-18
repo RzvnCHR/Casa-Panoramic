@@ -1833,29 +1833,84 @@ ${a('contact', t.book, 'btn')}
 })();
 
 
+
   // ==========================================
-  // FORMULAR CONTACT
+  // FORMULAR CONTACT - WEB3FORMS
   // ==========================================
+
   const form = $('#contact-form');
+
   if (form) {
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (!C.contact.email) {
-        alert(
-          lang === 'ro'
-            ? 'Completează mai întâi emailul în config.js.'
-            : 'First add an email address in config.js.'
-        );
-        return;
+
+      const submitBtn = form.querySelector('[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+
+      const isRO = lang === 'ro';
+
+      const formData = new FormData(form);
+
+      // Cheia Web3Forms
+      formData.set(
+        'access_key',
+        '3b15f82c-1379-40e7-87ff-238c187d697b'
+      );
+
+      // Subiectul emailului
+      formData.set(
+        'subject',
+        'Mesaj nou de pe Casa Panoramic'
+      );
+
+      // Identificarea formularului
+      formData.set('from_name', 'Casa Panoramic - Website');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = isRO
+          ? 'Se trimite...'
+          : 'Sending...';
       }
-      const d = new FormData(form);
-      location.href =
-        `mailto:${C.contact.email}` +
-        `?subject=${encodeURIComponent('Casa Panoramic — ' + d.get('name'))}` +
-        `&body=${encodeURIComponent(
-          d.get('message') + '\n\n' +
-          d.get('name') + ' — ' + d.get('email')
-        )}`;
+
+      try {
+        const response = await fetch(
+          'https://api.web3forms.com/submit',
+          {
+            method: 'POST',
+            body: formData
+          }
+        );
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          alert(
+            isRO
+              ? 'Mesajul a fost trimis cu succes! Vă vom contacta în cel mai scurt timp.'
+              : 'Your message has been sent successfully! We will contact you as soon as possible.'
+          );
+
+          form.reset();
+        } else {
+          throw new Error(result.message || 'Submission failed');
+        }
+
+      } catch (error) {
+        console.error('Web3Forms error:', error);
+
+        alert(
+          isRO
+            ? 'Mesajul nu a putut fi trimis. Vă rugăm să încercați din nou.'
+            : 'Your message could not be sent. Please try again.'
+        );
+
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        }
+      }
     });
   }
 })();
