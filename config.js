@@ -6,7 +6,7 @@ window.CP_CONFIG = {
   price: '300–500 lei',
   /* Înlocuiește linkurile cu propriile fișiere .mp4 sau URL-uri Cloudflare R2 */
   videos: {
-    hero: '/videos/hero-video.mp4',
+    hero: 'https://pub-e83a222f8221428d947fe7ae3c352a14.r2.dev/hero-video.mp4',
   },
   images: {
     hero: '/images/hero-bg.png',
