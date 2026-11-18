@@ -250,7 +250,7 @@ intro: {
 },
   {id:'vila-2', name:{ro:'Vila 2',en:'House 2'}, 
     image: "/images/vila2.png",
-    gallery:['https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&q=85','https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&q=85','https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=85']}
+    gallery:['/images/vila2.png']}
   ],
 
 
