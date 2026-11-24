@@ -789,11 +789,23 @@ const eventsGallery = () => `
           <div class="container">
 
             ${gastronomieGallery()}
-            <p class="center mt notice">
-              ${lang === 'ro'
-                ? 'Meniul, prețurile și disponibilitatea sunt oferite la cerere.'
-                : 'Menu, prices and availability upon request.'}
-            </p>
+<div class="center mt notice" style="line-height:1.9; padding:24px;">
+  ${lang === 'ro' ? `
+    <h3>Condiții pentru comenzi și rezervări</h3>
+    <p>Comenzile se efectuează cu <strong>minimum 72 de ore în avans</strong>.</p>
+    <p>Serviciul este disponibil pentru <strong>minimum 8 persoane</strong>.</p>
+    <p>Meniul se stabilește de comun acord, în funcție de preferințele grupului.</p>
+    <p>Pentru confirmarea rezervării se percepe un avans.</p>
+    <p><strong>Locurile sunt rezervate provizoriu timp de 24 de ore</strong>, până la prezentarea dovezii plății avansului. În lipsa acesteia, rezervarea poate fi anulată.</p>
+  ` : `
+    <h3>Orders and reservations</h3>
+    <p>Orders must be placed at least <strong>72 hours in advance</strong>.</p>
+    <p>Minimum group size: <strong>8 people</strong>.</p>
+    <p>The menu is agreed upon according to the group's preferences.</p>
+    <p>An advance payment is required to confirm the reservation.</p>
+    <p><strong>Places are held provisionally for 24 hours</strong>, pending proof of advance payment. Without confirmation, the reservation may be cancelled.</p>
+  `}
+</div>
             <div class="center">
 ${a('contact', t.book, 'btn')}
             </div>
