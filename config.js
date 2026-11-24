@@ -115,10 +115,24 @@ intro: {
     en: "Luca"
   },
 
-  intro: {
-    ro: "Un refugiu confortabil în mijlocul naturii, perfect pentru relaxare și momente alături de cei dragi. Ciubărul, sauna, foișorul și zonele de grătar oferă cadrul ideal pentru o vacanță liniștită și plină de amintiri.",
-    en: "A comfortable retreat surrounded by nature, perfect for relaxation and quality time with loved ones. The hot tub, sauna, gazebo and barbecue areas create the ideal setting for a peaceful and memorable getaway."
+intro: {
+  ro: "Casa Luca oferă cazare pentru până la 5 familii, dispunând de 5 camere confortabile: 3 camere la parter și 2 camere la etaj. Un refugiu primitor în mijlocul naturii, cu acces la ciubăr, saună, foișor și zone de grătar, ideal pentru vacanțe alături de familie și prieteni.",
+  en: "Casa Luca accommodates up to 5 families in 5 comfortable rooms: 3 on the ground floor and 2 upstairs. A welcoming retreat surrounded by nature, with access to a hot tub, sauna, gazebo and barbecue areas, perfect for families and friends."
 },
+  unitFeatures: [
+  "Capacitate: 5 familii",
+  "5 camere: 3 la parter și 2 la etaj",
+  "Living spațios",
+  "Bucătărie utilată",
+  "Acces la facilitățile complexului, conform disponibilității"
+],
+  unitFeaturesEn: [
+  "Capacity: 5 families",
+  "5 rooms: 3 on the ground floor and 2 upstairs",
+  "Spacious living area",
+  "Equipped kitchen",
+  "Access to resort amenities, subject to availability"
+],
 
   image: "/images/luca/luca-card-image.jpg",
 
@@ -181,11 +195,25 @@ intro: {
     en: 'David'
   },
 
-  intro: {
-    ro: "O locație primitoare, ideală pentru familii și grupuri de prieteni. Foișorul cu bucătărie amenajată și zona de grătar creează atmosfera perfectă pentru mese împreună, relaxare și momente de neuitat în natură.",
-    en: "A welcoming retreat, ideal for families and groups of friends. The gazebo with its own kitchen and barbecue area provides the perfect setting for shared meals, relaxation and unforgettable moments surrounded by nature."
+intro: {
+  ro: "Casa David este o locație primitoare, ideală pentru familii și grupuri de prieteni. Dispune de 2 camere cu pat dublu, dintre care una oferă suplimentar 2 paturi single, accesibile pe scară. Foișorul cu bucătărie amenajată și zona de grătar completează experiența de relaxare în natură.",
+  en: "Casa David is a welcoming retreat for families and friends. It features 2 rooms with double beds, one of which also offers 2 single beds accessible by stairs. A gazebo with its own kitchen and barbecue area completes the relaxing experience surrounded by nature."
 },
-
+unitFeatures: [
+  "2 camere cu pat dublu",
+  "2 paturi single suplimentare, accesibile pe scară, într-una dintre camere",
+  "Foișor cu bucătărie amenajată",
+  "Zonă de grătar",
+  "Acces la facilitățile complexului, conform disponibilității"
+],
+  unitFeaturesEn: [
+  "2 rooms with double beds",
+  "2 additional single beds accessible by stairs in one of the rooms",
+  "Gazebo with equipped kitchen",
+  "Barbecue area",
+  "Access to resort amenities, subject to availability"
+],
+  
   // Imaginea principală de pe cardul de cazare
   image: '/images/david/david-card-image.jpg',
 
