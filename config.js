@@ -1,5 +1,5 @@
 /* CASA PANORAMIC — TOATE DATELE EDITABILE ÎNTR-UN SINGUR LOC */
-.window.CP_CONFIG = {
+window.CP_CONFIG = {
   brand: 'Casa Panoramic',
   contact: { phone: '0775302543', whatsapp: '+40775302543', email: '', maps: 'https://www.google.com/maps/search/?api=1&query=Vintileasca%20Vrancea' },
   stats: { guests: '≈40', units: '4', land: '5.000 m²', locations: '2' },
