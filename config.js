@@ -248,7 +248,7 @@ intro: {
     view: '/videos/david-view.mp4'
   }
 },
-  {id:'vila-2', name:{ro:'Vila 2',en:'House 2'}, 
+  {id:'vila-2', name:{ro:'Vila Panoramic',en:'Panoramic Villa'}, 
     image: "/images/vila2.png",
     gallery:['/images/vila2.png']}
   ],
