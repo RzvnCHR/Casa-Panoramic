@@ -408,20 +408,37 @@ const featureGrid = () => {
     'vila-1': { remove: [], add: [] },
     'vila-2': { remove: [], add: [] }
   };
-  const unitFeatures = (u, source = 'unitFeatures') => {
-    const cfg = unitFeatureOverrides[u.id] || { remove: [], add: [] };
-    const base = Array.isArray(t[source]) ? t[source] : [];
-    const custom = u[source]; // opțional, direct în config.js
-    const list = Array.isArray(custom) ? custom : base;
-    const remove = cfg.remove || [];
-    const additions = (cfg.add || []).map(x =>
-      typeof x === 'string' ? x : (x[lang] || x.ro || '')
-    );
-    const result = [...list.filter(x => !remove.some(term =>
-      String(x).toLocaleLowerCase().includes(term.toLocaleLowerCase())
-    )), ...additions];
-    return [...new Set(result.filter(Boolean))];
-  };
+const unitFeatures = (u, source = 'unitFeatures') => {
+  const cfg = unitFeatureOverrides[u.id] || { remove: [], add: [] };
+  const base = Array.isArray(t[source]) ? t[source] : [];
+
+  const custom = u[source];
+
+  const list = Array.isArray(custom)
+    ? (lang === 'ro'
+        ? custom
+        : Array.isArray(u[source + 'En'])
+          ? u[source + 'En']
+          : base)
+    : base;
+
+  const remove = cfg.remove || [];
+
+  const additions = (cfg.add || []).map(x =>
+    typeof x === 'string' ? x : (x[lang] || x.ro || '')
+  );
+
+  const result = [
+    ...list.filter(x =>
+      !remove.some(term =>
+        String(x).toLocaleLowerCase().includes(term.toLocaleLowerCase())
+      )
+    ),
+    ...additions
+  ];
+
+  return [...new Set(result.filter(Boolean))];
+};
   const unitFeatureGrid = u => `
     <div class="feature-grid">
       ${unitFeatures(u, 'features').map((f, i) => `
